@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Pathfind</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    
+    <script src="javascript/utils/adjacentSides.js" defer></script>
+    <script src="javascript/utils/adjacentSidesMaze.js" defer></script>
+    <script src="javascript/utils/PriorityQueue.js" defer></script>
+    <script src="javascript/utils/heuristic.js" defer></script>
+    <script src="javascript/utils/visualizePath.js" defer></script>
+    <script src="javascript/utils/visualizeMaze.js" defer></script>
+    <script src="javascript/maze algorithms/HuntAndKill.js" defer></script>
+    <script src="javascript/maze algorithms/Backtracking.js" defer></script>
+    <script src="javascript/maze algorithms/Prims.js" defer></script>
+    <script src="javascript/maze algorithms/Kruskal.js" defer></script>
+    <script src="javascript/maze algorithms/BinaryTree.js" defer></script>
+    <script src="javascript/pathfind algorithms/Astar.js" defer></script>
+    <script src="javascript/pathfind algorithms/GreedyBestFirstSearch.js" defer></script>
+    <script src="javascript/pathfind algorithms/Dijkstra.js" defer></script>
+    <script src="javascript/pathfind algorithms/BFS.js" defer></script>
+    <script src="javascript/pathfind algorithms/DFS.js" defer></script>
+    <script src="javascript/utils/optionController.js" defer></script>
+    <script src="javascript/utils/events.js" defer></script>
+    <script src="javascript/grid.js" defer></script>
+    <script src="javascript/main.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="site-title">
+            <img src="./img/logo.png" alt="site-logo">
+            <h1>Visual Pathfinder</h1>
+        </div>
+        <div class="hr"></div>
+        <div class="dropdown">
+            <div id="algo" class="select">
+                <span class="selected">Algorithms</span>
+                <div class="caret"></div>
+            </div>
+            <ul class="menu">
+                <li>Depth First Search</li>
+                <li>Breadth First Search</li>
+                <li>Greedy Best First Search</li>
+                <li>Dijkstra's Algorithm</li>
+                <li>A* Algorithm</li>
+            </ul>
+        </div>
+
+         <div class="dropdown">
+            <div id="mazes" class="select">
+                <span class="selected">Mazes</span>
+                <div class="caret"></div>
+            </div>
+            <ul class="menu">
+                <li id="BinaryTree">Binary Tree</li>
+                <li id="Kruskal">Randomized Kruskal</li>
+                <li id="Prims">Randomized Prims</li>
+                <li id="Recursive Backtracking">Recursive Backtracking</li>
+                <li id="HuntAndKill">Hunt And Kill</li>
+                
+            </ul>
+        </div>
+        <div class="dropdown">
+            <div id="speed" class="select">
+                <span class="selected">Speed (Normal)</span>
+                <div class="caret"></div>
+            </div>
+            <ul class="menu">
+                <li class="active">Normal</li>
+                <li>Fast</li>
+                <li>Slow</li>
+            </ul>
+        </div>
+
+        <button id="Start">Start</button>
+         <button id="Reset">Reset</button>
+          <button id="Remove_Walls_Weights">Remove Walls & Weights</button>
+           <button id="Remove_Path">Remove Path</button>
+    </nav>
+    <table id="grid" draggable="false" oncontextmenu="return false;"></table>
+</body>
+</html>

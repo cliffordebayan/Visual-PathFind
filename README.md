@@ -5,7 +5,8 @@ This web project is created to help people understand pathfinding algorithms and
 Instructions:
 1. Pick a pathfinding algorithm of your choice.
 2. Pick a maze generation algorithm or create your own maze using the functionalities below (optional).
-3. Click the start button.
+3. Pick a speed (by default the speed is normal).
+4. Click the start button.
 
 * Right click mouse button to add wall.
 * Left click mouse button to add weight.
